@@ -35,7 +35,7 @@ public final class Aggregators {
     ZIM,    /* Returns 0 when a data point is missing */
     MAX,    /* Returns the <type>.MaxValue when a data point is missing */
     MIN,    /* Returns the <type>.MinValue when a data point is missing */
-	PREV    /* Returns the previous value stored, when a data point is missing */
+    PREV    /* Returns the previous value stored, when a data point is missing */
   }
   
   /** Aggregator that sums up all the data points. */
@@ -152,7 +152,7 @@ public final class Aggregators {
     aggregators.put("zimsum", ZIMSUM);
     aggregators.put("mimmin", MIMMIN);
     aggregators.put("mimmax", MIMMAX);
-	aggregators.put("pfsum", PFSUM);
+    aggregators.put("pfsum", PFSUM);
 
     PercentileAgg[] percentiles = {
        p999, p99, p95, p90, p75, p50, 
